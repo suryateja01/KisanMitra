@@ -1,0 +1,20 @@
+create table Menu_1358296(
+MenuId VARCHAR2(10) NOT NULL PRIMARY KEY,
+MenuName VARCHAR2(25) NOT NULL,
+Description VARCHAR2(50),
+Category VARCHAR2(20) NOT NULL,
+Type VARCHAR2(10) NOT NULL,
+Cost NUMBER(6,2) NOT NULL,
+Status VARCHAR2(15) NOT NULL)
+
+create sequence Menusequence_1358296
+start with 100
+increment by 1
+nocache
+nocycle;
+
+
+drop table Menu_1358296
+
+select * from Menu_1358296
+select Menusequence_1358296.nextval from dual
